@@ -1,5 +1,4 @@
 namespace TareasMVC.Entidades
-
 {
     public class Paso
     {

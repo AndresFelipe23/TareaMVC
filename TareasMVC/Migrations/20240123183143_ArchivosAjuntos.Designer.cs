@@ -12,8 +12,8 @@ using TareasMVC;
 namespace TareasMVC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240123183143_ArchivoAjunto")]
-    partial class ArchivoAjunto
+    [Migration("20240123183143_ArchivosAjuntos")]
+    partial class ArchivosAjuntos
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,7 +25,7 @@ namespace TareasMVC.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("TareasMVC.Entidades.ArchivoAdjunto", b =>
+            modelBuilder.Entity("TareasMVC.Entidades.ArchivosAjuntos", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -106,10 +106,10 @@ namespace TareasMVC.Migrations
                     b.ToTable("Tareas");
                 });
 
-            modelBuilder.Entity("TareasMVC.Entidades.ArchivoAdjunto", b =>
+            modelBuilder.Entity("TareasMVC.Entidades.ArchivosAdjuntos", b =>
                 {
                     b.HasOne("TareasMVC.Entidades.Tarea", "Tarea")
-                        .WithMany("ArchivoAdjunto")
+                        .WithMany("ArchivosAdjuntos")
                         .HasForeignKey("TareaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -130,7 +130,7 @@ namespace TareasMVC.Migrations
 
             modelBuilder.Entity("TareasMVC.Entidades.Tarea", b =>
                 {
-                    b.Navigation("ArchivoAdjunto");
+                    b.Navigation("ArchivosAdjuntos");
 
                     b.Navigation("Pasos");
                 });

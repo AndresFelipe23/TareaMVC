@@ -7,7 +7,7 @@ namespace TareasMVC.Entidades
         public Guid Id { get; set; }
         public int TareaId { get; set; }
         public Tarea Tarea { get; set; }
-        [Unicode] //
+        [Unicode]
         public string Url { get; set; }
         public string Titulo { get; set; }
         public int Orden { get; set; }

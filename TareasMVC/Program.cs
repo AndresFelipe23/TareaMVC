@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using TareasMVC;
 using Microsoft.AspNetCore.Mvc.Razor;
 using TareasMVC.Servicios;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +23,9 @@ builder.Services.AddControllersWithViews(opciones =>
 }).AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix).AddDataAnnotationsLocalization(opciones =>
 {
     opciones.DataAnnotationLocalizerProvider = (_, factoria) => factoria.Create(typeof(RecursoCompartido));
+}).AddJsonOptions(opciones =>
+{
+    opciones.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
 });
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -53,6 +57,10 @@ builder.Services.AddLocalization(opciones =>
 builder.Services.AddTransient<IServicioUsuarios, ServicioUsuarios>();
 
 builder.Services.AddAutoMapper(typeof(Program));
+//TODO: EN CASO DE USAR EL AZURE ESTE:
+// builder.Services.AddTransient<IAlmacenadorArchivos, AlmacenadorArchivosAzure>();
+//TODO: EN CASO DE USAR EL LOCAL ESTE:
+builder.Services.AddTransient<IAlmacenadorArchivos, AlmacenadorArchivosLocal>();
 
 var app = builder.Build();
 

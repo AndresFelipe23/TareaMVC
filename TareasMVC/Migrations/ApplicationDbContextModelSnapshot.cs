@@ -246,7 +246,7 @@ namespace TareasMVC.Migrations
 
                     b.HasIndex("TareaId");
 
-                    b.ToTable("ArchivoAdjunto");
+                    b.ToTable("ArchivosAdjuntos");
                 });
 
             modelBuilder.Entity("TareasMVC.Entidades.Paso", b =>
@@ -360,7 +360,7 @@ namespace TareasMVC.Migrations
             modelBuilder.Entity("TareasMVC.Entidades.ArchivoAdjunto", b =>
                 {
                     b.HasOne("TareasMVC.Entidades.Tarea", "Tarea")
-                        .WithMany("ArchivoAdjunto")
+                        .WithMany("ArchivosAdjuntos")
                         .HasForeignKey("TareaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -390,7 +390,7 @@ namespace TareasMVC.Migrations
 
             modelBuilder.Entity("TareasMVC.Entidades.Tarea", b =>
                 {
-                    b.Navigation("ArchivoAdjunto");
+                    b.Navigation("ArchivosAdjuntos");
 
                     b.Navigation("Pasos");
                 });

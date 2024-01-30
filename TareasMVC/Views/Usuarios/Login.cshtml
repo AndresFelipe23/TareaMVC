@@ -24,13 +24,13 @@
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
+            <div class="form-group mt-2">
                 <label asp-for="Password"></label>
                 <input asp-for="Password" class="form-control" />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
 
-            <div class="form-check mb-3">
+            <div class="form-check mb-3 mt-2">
                 <input class="form-check-input" type="checkbox" asp-for="Recuerdame" />
                 <label class="form-check-label" asp-for="Recuerdame"></label>
             </div>
@@ -38,7 +38,7 @@
             <button class="btn-primary btn mt-4">Login</button>
             <a class="btn btn-success mt-4" asp-action="Registro">Crear una nueva cuenta</a>
 
-            <a class="btn btn-success mt-4" asp-action="LoginExterno" asp-route-proveedor="Microsoft">Continuar con
+            <a class="btn btn-warning mt-4" asp-action="LoginExterno" asp-route-proveedor="Microsoft">Continuar con
                 Microsoft</a>
 
         </form>

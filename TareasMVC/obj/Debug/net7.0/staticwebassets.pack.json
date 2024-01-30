@@ -5,12 +5,32 @@
       "PackagePath": "staticwebassets\\TareasMVC.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\HP 21\\source\\repos\\TareasMVC\\TareasMVC\\wwwroot\\archivosadjuntos\\26455654-852c-48e5-9252-d7140461178e.jpg",
+      "PackagePath": "staticwebassets\\archivosadjuntos\\26455654-852c-48e5-9252-d7140461178e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP 21\\source\\repos\\TareasMVC\\TareasMVC\\wwwroot\\archivosadjuntos\\48c1fde1-3a25-45dd-8d01-ce5c11ac78c6.jpg",
+      "PackagePath": "staticwebassets\\archivosadjuntos\\48c1fde1-3a25-45dd-8d01-ce5c11ac78c6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP 21\\source\\repos\\TareasMVC\\TareasMVC\\wwwroot\\archivosadjuntos\\e38a119e-935b-4390-bf6d-1984e506d506.png",
+      "PackagePath": "staticwebassets\\archivosadjuntos\\e38a119e-935b-4390-bf6d-1984e506d506.png"
+    },
+    {
       "Id": "C:\\Users\\HP 21\\source\\repos\\TareasMVC\\TareasMVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\HP 21\\source\\repos\\TareasMVC\\TareasMVC\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\HP 21\\source\\repos\\TareasMVC\\TareasMVC\\wwwroot\\js\\archivos-adjuntos.js",
+      "PackagePath": "staticwebassets\\js\\archivos-adjuntos.js"
+    },
+    {
+      "Id": "C:\\Users\\HP 21\\source\\repos\\TareasMVC\\TareasMVC\\wwwroot\\js\\pasos.js",
+      "PackagePath": "staticwebassets\\js\\pasos.js"
     },
     {
       "Id": "C:\\Users\\HP 21\\source\\repos\\TareasMVC\\TareasMVC\\wwwroot\\js\\site.js",
